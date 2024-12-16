@@ -1,0 +1,132 @@
+/* Основні стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #9fcfff, #e3f2fd);
+  color: #333;
+}
+
+/* Навігаційне меню */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #1565c0;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Стилі заголовків */
+h1 {
+  text-align: center;
+  color: #0d47a1;
+  font-family: 'Pacifico', cursive;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #1565c0;
+  font-family: 'Merriweather', serif;
+  margin-top: 30px;
+}
+
+/* Стилі абзаців */
+.intro {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+.highlighted-text {
+  font-weight: bold;
+  color: #1976d2;
+  background-color: #bbdefb;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Форма */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="checkbox"],
+form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form button {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+
+/* Коробка */
+.box, .fun-box {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Lato', sans-serif;
+}
+
+.fun-box {
+  background: #bbdefb;
+}
+
+/* Секція */
+section {
+  padding: 20px;
+  background: #f5f5f5;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+}
+
+/* Футер */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Merriweather', serif;
+}

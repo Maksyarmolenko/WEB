@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8b0000; /* Темно-червоний */
+  color: white;
+  padding: 10px 20px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 40px;
+}
+
+.header .logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header .search-bar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .search-bar input {
+  width: 60%;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+}
+
+.header .search-bar button {
+  background-color: #606060;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.header .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.header .user-profile img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Основна частина */
+.main {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* Бокова панель */
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #ff0000;
+}
+
+/* Секція контенту */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.video {
+  width: 320px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.video img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+.video h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.video p {
+  margin: 5px 0;
+  color: #606060;
+  font-size: 14px;
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  background-color: #8b0000; /* Темно-червоний */
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,105 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Змінений шрифт */
+    background-color: #f0f0f0; /* Сірий фон */
+    color: #333; /* Темно-сірий колір тексту */
+}
+
+h1, h2 {
+    color: #004d40; /* Глибокий зелений для заголовків */
+}
+
+a {
+    text-decoration: none;
+    color: #00796b; /* Зеленувато-синій для посилань */
+}
+
+a:hover {
+    color: #004d40; /* Темно-зелений при наведенні */
+}
+
+/* Стили для хедера */
+header {
+    background-color: #00796b; /* Темно-зелений фон для хедера */
+    padding: 20px;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для секцій */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section#me img {
+    max-width: 8%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Стили для списка практических робіт */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    font-size: 1.1rem;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #004d40; /* Глибокий зелений фон для футера */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p a {
+    color: #ffffff;
+}
+
+footer p a:hover {
+    color: #00796b;
+}

@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Контейнер анімації */
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('C:/Users/Asus/Desktop/Web/LB6/photo1.png') center center no-repeat; /* Статичний фон */
+  background-size: cover; /* Розтягнути фон */
+}
+
+/* Покебол */
+.pokeball {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, white 50%, red 50%);
+  border: 4px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: bounce 3s ease-in-out infinite; /* Додаємо стрибки */
+  z-index: 1;
+}
+
+/* Лінія посередині покебола */
+.pokeball::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: black;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Центральна кнопка */
+.pokeball::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Пікачу */
+.pokemon {
+  position: absolute;
+  bottom: 18%; /* Початкове положення всередині покебола */
+  left: 50%;
+  transform: translateX(-50%) scale(0); /* Початково прихований */
+  animation: jump 3s ease-in-out infinite; /* Анімація вистрибування */
+  z-index: 2;
+}
+
+.pokemon img {
+  width: 150px;
+  height: auto;
+  animation: wave 0.5s infinite alternate; /* Анімація махання рукою */
+}
+
+/* Анімація стрибків покебола */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0); /* Початкова і кінцева точка */
+  }
+  50% {
+    transform: translateX(-50%) translateY(-20px); /* Підстрибує вгору */
+  }
+}
+
+/* Анімація "вистрибування" Пікачу */
+@keyframes jump {
+  0% {
+    transform: translateX(-50%) scale(0); /* Схований */
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-50%) translateY(-30px) scale(0.8); /* З'являється */
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) translateY(-150px) scale(1); /* Вистрибує */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) scale(0); /* Повертається в покебол */
+    opacity: 0;
+  }
+}
+
+/* Анімація "махання" рукою Пікачу */
+@keyframes wave {
+  from {
+    transform: rotate(0deg); /* Початкова точка */
+  }
+  to {
+    transform: rotate(20deg); /* Кінцева точка */
+  }
+}
